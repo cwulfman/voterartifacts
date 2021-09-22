@@ -10,4 +10,25 @@ describe('VoterArtifacts', function () {
 	    expect(new VoterArtifacts('Divinanda').precinct).to.equal('precinct_4');
 	});
     });
+
+    describe('cvr', function () {
+	it('reads the proper cvr xml file into a string', function () {
+	    let artifacts = new VoterArtifacts('Allen');
+	    expect(artifacts.cvr.substring(0,5)).to.equal("<?xml");
+	});
+    });
+
+    describe('ballot', function () {
+	it('reads the proper ballot pdf file into a string', function () {
+	    let artifacts = new VoterArtifacts('Benta');
+	    expect(artifacts.ballot.substring(0,15)).to.equal("JVBERi0xLjQNJeL");
+	});
+    });
+
+    describe('affidavit', function () {
+	it('reads the proper affidavit pdf file into a string', function () {
+	    let artifacts = new VoterArtifacts('Benta');
+	    expect(artifacts.affidavit.substring(0,15)).to.equal("JVBERi0xLjMKJcT");
+	});
+    });
 });

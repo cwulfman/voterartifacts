@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/cwulfman/voterartifacts/issues"
   },
-  "homepage": "https://github.com/cwulfman/voterartifacts#readme"
+  "homepage": "https://github.com/cwulfman/voterartifacts#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
 }
