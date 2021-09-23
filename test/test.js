@@ -7,7 +7,11 @@ describe('VoterArtifacts', function () {
 	    expect(new VoterArtifacts('Allen').precinct).to.equal('precinct_1');
 	    expect(new VoterArtifacts('Benta').precinct).to.equal('precinct_2');
 	    expect(new VoterArtifacts('Cho').precinct).to.equal('precinct_3');
+	});
+	it('assigns precinct_4 by default', function() {
 	    expect(new VoterArtifacts('Divinanda').precinct).to.equal('precinct_4');
+	    expect(new VoterArtifacts('Zoolander').precinct).to.equal('precinct_4');
+	    expect(new VoterArtifacts().precinct).to.equal('precinct_4');
 	});
     });
 

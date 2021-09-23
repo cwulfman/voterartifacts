@@ -5,7 +5,7 @@ const path = require('path');
 let pathRoot = path.resolve(__dirname, 'assets/files')
 
 class VoterArtifacts {
-    constructor(lastName) {
+    constructor(lastName='Z') {
 	let key = lastName.substring(0,1).toUpperCase();
 	switch(key) {
 	case 'A':
@@ -17,11 +17,8 @@ class VoterArtifacts {
 	case 'C':
 	    this.precinct = "precinct_3";
 	    break;
-	case 'D':
-	    this.precinct = "precinct_4";
-	    break;
 	default:
-	    throw new Error("invalid lastName");
+	    this.precinct = "precinct_4";
 	};
     }
 
