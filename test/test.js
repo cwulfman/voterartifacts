@@ -6,25 +6,25 @@ describe('VoterArtifacts', function () {
 	it('selects precinct_1 if last name begins with letter A', function() {
 	    let artifact = new VoterArtifacts("Allen");
 	    expect(artifact.precinctId).to.equal('precinct_1');
-	    expect(artifact.precinct).to.equal('port precinct');
+	    expect(artifact.precinct).to.equal('Precinct 1 Spaceport');
 	});
 	it('selects precinct_2 if last name begins with letter B', function() {
 	    let artifact = new VoterArtifacts("Binda");
 	    expect(artifact.precinctId).to.equal('precinct_2');
-	    expect(artifact.precinct).to.equal('bedrock precinct');
+	    expect(artifact.precinct).to.equal('Precinct 2 Bedrock');
 	});
 	it('selects precinct_3 if last name begins with letter C', function() {
 	    let artifact = new VoterArtifacts("Cooper");
 	    expect(artifact.precinctId).to.equal('precinct_3');
-	    expect(artifact.precinct).to.equal('downtown precinct');
+	    expect(artifact.precinct).to.equal('Precinct 3 Downtown');
 	});
 	it('selects precinct_4 by default', function() {
 	    let artifact = new VoterArtifacts();
 	    let artifact2 = new VoterArtifacts("Zi");
 	    expect(artifact.precinctId).to.equal('precinct_4');
 	    expect(artifact2.precinctId).to.equal('precinct_4');
-	    expect(artifact.precinct).to.equal('spacetown precinct');
-	    expect(artifact2.precinct).to.equal('spacetown precinct');
+	    expect(artifact.precinct).to.equal('Precinct 4 Spacetown');
+	    expect(artifact2.precinct).to.equal('Precinct 4 Spacetown');
 	});
     });
 

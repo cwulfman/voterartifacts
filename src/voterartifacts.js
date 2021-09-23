@@ -10,19 +10,19 @@ class VoterArtifacts {
 	switch(key) {
 	case 'A':
 	    this.precinctId = "precinct_1";
-	    this.precinct = "port precinct";
+	    this.precinct = "Precinct 1 Spaceport";
 	    break;
 	case 'B':
 	    this.precinctId = "precinct_2";
-	    this.precinct = "bedrock precinct";
+	    this.precinct = "Precinct 2 Bedrock";
 	    break;
 	case 'C':
 	    this.precinctId = "precinct_3";
-	    this.precinct = "downtown precinct";
+	    this.precinct = "Precinct 3 Downtown";
 	    break;
 	default:
 	    this.precinctId = "precinct_4";
-	    this.precinct = "spacetown precinct";
+	    this.precinct = "Precinct 4 Spacetown";
 
 	};
     }
